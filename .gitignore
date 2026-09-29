@@ -7,6 +7,9 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 *.log
+artifacts/
+test-results/
+playwright-report/
 
 .vercel
 .env*

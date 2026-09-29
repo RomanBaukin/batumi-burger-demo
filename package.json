@@ -2,6 +2,7 @@
   "name": "batumi-burger-demo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "24.x"
   },
@@ -10,14 +11,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/cart.test.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "next": "16.3.7",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
